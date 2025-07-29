@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { usePageTitle } from "@/hooks/use-page-title";
 import bluebackImage from "@/assets/blueback.png";
 import trishaImage from "@/assets/trisha-ballakur-headshot.jpg";
-import shahilImage from "@/assets/Shahil-mangroliya-headshot.png";
+import shahilImage from "@/assets/shahil-mangroliya-headshot.png";
 
 const About = () => {
   usePageTitle("Pointz: Plan Safer on Bikes - About Us");
