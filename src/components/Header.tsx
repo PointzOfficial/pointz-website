@@ -56,7 +56,7 @@ export const Header = () => {
               ABOUT
             </Link>
             <Link 
-              to="/contact" 
+              to="/contactus" 
               className="text-primary hover:text-primary-dark transition-colors font-medium"
               style={{
                 fontFamily: 'Nunito Sans, sans-serif',
@@ -124,7 +124,7 @@ export const Header = () => {
                 ABOUT
               </Link>
               <Link 
-                to="/contact" 
+                to="/contactus" 
                 className="block text-primary hover:text-primary-dark transition-colors font-medium py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
                 style={{
