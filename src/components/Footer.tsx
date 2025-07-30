@@ -84,7 +84,8 @@ export const Footer = () => {
 
       <CookiePreferences 
         isOpen={showCookiePreferences} 
-        onClose={() => setShowCookiePreferences(false)} 
+        onClose={() => setShowCookiePreferences(false)}
+        onHideBanner={() => {}} // No-op since Footer doesn't have a banner to hide
       />
     </>
   );
