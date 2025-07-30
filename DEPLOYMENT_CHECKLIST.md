@@ -52,7 +52,7 @@ Value: your-username.github.io
 - ✅ `vite.config.ts` - Updated base path
 - ✅ `public/CNAME` - Custom domain configuration
 - ✅ `public/404.html` - SPA routing for GitHub Pages (handles direct URL access)
-- ✅ `index.html` - Clean URLs without hash fragments
+- ✅ `index.html` - SPA routing script for clean URLs
 - ✅ `src/App.tsx` - Switched from HashRouter to BrowserRouter
 - ✅ `.github/workflows/deploy.yml` - GitHub Actions workflow
 - ✅ `package.json` - Added deploy script
