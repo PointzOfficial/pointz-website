@@ -53,7 +53,7 @@ Value: your-username.github.io
 - ✅ `public/CNAME` - Custom domain configuration
 - ✅ `public/404.html` - SPA routing for GitHub Pages (handles direct URL access)
 - ✅ `index.html` - SPA routing script for clean URLs
-- ✅ `src/App.tsx` - Switched from HashRouter to BrowserRouter
+- ✅ `src/App.tsx` - Switched from HashRouter to BrowserRouter, added /qr-code route
 - ✅ `.github/workflows/deploy.yml` - GitHub Actions workflow
 - ✅ `package.json` - Added deploy script
 
