@@ -76,7 +76,8 @@ export const CookieBanner = () => {
 
       <CookiePreferences 
         isOpen={showPreferences} 
-        onClose={() => setShowPreferences(false)} 
+        onClose={() => setShowPreferences(false)}
+        onHideBanner={() => setShowBanner(false)}
       />
     </>
   );

@@ -6,9 +6,10 @@ import { Switch } from "@/components/ui/switch";
 interface CookiePreferencesProps {
   isOpen: boolean;
   onClose: () => void;
+  onHideBanner: () => void;
 }
 
-export const CookiePreferences = ({ isOpen, onClose }: CookiePreferencesProps) => {
+export const CookiePreferences = ({ isOpen, onClose, onHideBanner }: CookiePreferencesProps) => {
   const [preferences, setPreferences] = useState({
     necessary: true, // Always on
     performance: true,
@@ -19,6 +20,7 @@ export const CookiePreferences = ({ isOpen, onClose }: CookiePreferencesProps) =
     // Save preferences to localStorage or send to server
     localStorage.setItem('cookiePreferences', JSON.stringify(preferences));
     onClose();
+    onHideBanner();
   };
 
   const handleAcceptAll = () => {
@@ -33,6 +35,7 @@ export const CookiePreferences = ({ isOpen, onClose }: CookiePreferencesProps) =
       advertising: true
     }));
     onClose();
+    onHideBanner();
   };
 
   const handleDecline = () => {
@@ -47,6 +50,7 @@ export const CookiePreferences = ({ isOpen, onClose }: CookiePreferencesProps) =
       advertising: false
     }));
     onClose();
+    onHideBanner();
   };
 
   return (
