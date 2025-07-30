@@ -1,78 +1,73 @@
 # GitHub Pages Deployment Checklist
 
-## ✅ Configuration Fixed
+## Prerequisites
+- GitHub repository with your React Vite project
+- Custom domain: `www.bikepointz.com`
 
-### 1. Vite Configuration
-- [x] `base: '/'` in vite.config.ts
-- [x] Proper asset paths with base prefix
+## Steps to Deploy
 
-### 2. React Router Configuration
-- [x] Changed from BrowserRouter to HashRouter for GitHub Pages compatibility
-- [x] Removed 404.html and SPA redirect scripts (not needed with HashRouter)
-- [x] All routes configured correctly
+### 1. Repository Setup
+- Ensure your repository is public (required for GitHub Pages with custom domain)
+- Push all changes to the `main` branch
 
-### 3. Meta Tags & SEO
-- [x] Updated Open Graph URLs to `https://www.bikepointz.com/`
-- [x] Updated Twitter Card URLs
-- [x] Proper favicon and manifest paths
+### 2. GitHub Pages Configuration
+1. Go to your repository on GitHub
+2. Navigate to **Settings** → **Pages**
+3. Under **Source**, select **GitHub Actions**
+4. The workflow will automatically deploy when you push to `main`
 
-### 4. Build Process
-- [x] TypeScript compilation successful
-- [x] Vite build successful
-- [x] All assets properly generated
+### 3. Custom Domain Configuration
+1. In **Settings** → **Pages**, under **Custom domain**:
+   - Enter: `www.bikepointz.com`
+   - Check **Enforce HTTPS**
+2. Click **Save**
 
-## 🚀 Deployment Steps
+### 4. DNS Configuration
+Configure your domain's DNS settings with your domain provider:
 
-1. **Build the project:**
-   ```bash
-   npm run build
-   ```
+**A Records:**
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
 
-2. **Verify dist folder contains:**
-   - `index.html` (clean, no redirect scripts needed)
-   - All assets in `/assets/` folder
-   - All public files (favicon, manifest, etc.)
+**CNAME Record:**
+```
+Name: www
+Value: your-username.github.io
+```
 
-3. **Deploy to GitHub Pages:**
-   - Push changes to main branch
-   - GitHub Actions will automatically deploy
-   - Or manually upload dist folder contents to gh-pages branch
+### 5. Verify Deployment
+- Wait 5-10 minutes for DNS propagation
+- Visit `https://www.bikepointz.com` to verify the site is live
+- Check that all routes work properly (About, Contact, etc.)
 
-## 🔍 Why HashRouter Works Better
+### 6. SSL Certificate
+- GitHub Pages automatically provides SSL certificates
+- Ensure **Enforce HTTPS** is enabled in repository settings
 
-### Issue with BrowserRouter on GitHub Pages:
-- GitHub Pages doesn't support server-side routing
-- Direct URL access (e.g., `/about`) returns 404
-- Requires complex 404.html redirect scripts
+## Files Added/Modified
+- ✅ `vite.config.ts` - Updated base path
+- ✅ `public/CNAME` - Custom domain configuration
+- ✅ `public/404.html` - SPA routing for GitHub Pages
+- ✅ `index.html` - Added SPA routing script
+- ✅ `.github/workflows/deploy.yml` - GitHub Actions workflow
+- ✅ `package.json` - Added deploy script
 
-### Solution with HashRouter:
-- ✅ Works out of the box with GitHub Pages
-- ✅ No need for 404.html or redirect scripts
-- ✅ URLs use hash fragments (e.g., `/#/about`)
-- ✅ All routing handled client-side
-- ✅ Simpler and more reliable
+## Troubleshooting
+- If the site doesn't load, check DNS propagation (can take up to 24 hours)
+- Verify the CNAME file is in the `public` folder
+- Check GitHub Actions for deployment status
+- Ensure all routes work by testing navigation
 
-## 📝 Testing Checklist
+## Manual Deployment
+```bash
+npm run build
+git add .
+git commit -m "Deploy to GitHub Pages"
+git push origin main
+```
 
-- [ ] Homepage loads correctly at `https://www.bikepointz.com/`
-- [ ] Navigation between pages works (URLs will have `#` like `/#/about`)
-- [ ] Direct hash URL access works (e.g., `/#/contact`)
-- [ ] Assets load properly (images, CSS, JS)
-- [ ] Meta tags are correct for social sharing
-- [ ] Mobile responsiveness works
-- [ ] Cookie banner appears
-- [ ] All interactive elements work
-
-## 🔧 Current Status
-
-✅ **HashRouter configuration implemented**
-✅ **Build successful**
-✅ **Ready for deployment**
-
-The website should now work correctly at: https://www.bikepointz.com/
-
-**Note:** URLs will now use hash routing:
-- Home: `https://www.bikepointz.com/#/`
-- About: `https://www.bikepointz.com/#/about`
-- Contact: `https://www.bikepointz.com/#/contact`
-- etc. 
+The GitHub Actions workflow will automatically build and deploy your site. 
