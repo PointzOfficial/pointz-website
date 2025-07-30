@@ -6,7 +6,8 @@ import { Footer } from "@/components/Footer";
 import { usePageTitle } from "@/hooks/use-page-title";
 
 const Index = () => {
-  usePageTitle("Pointz: Plan Safer on Bikes - Home");
+  usePageTitle("Pointz - Building Better Bike Routes | Safe Biking Navigation App");
+
   return (
     <div className="min-h-screen bg-background">
       <Header />

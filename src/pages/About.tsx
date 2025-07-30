@@ -6,7 +6,8 @@ import trishaImage from "@/assets/trisha-ballakur-headshot.jpg";
 import shahilImage from "@/assets/shahil-mangroliya-headshot.png";
 
 const About = () => {
-  usePageTitle("Pointz: Plan Safer on Bikes - About Us");
+  usePageTitle("About Pointz - Meet Our Team | Building Better Bike Routes");
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -99,18 +100,26 @@ const About = () => {
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     In order to test out the premium app, we have a 3-day trial period during which anyone can play around with Plus for no charge. However, after the trial period ends, riders will be charged for their annual subscription to Plus.
                   </p>
+                </div>
+
+                <div className="border-b border-border pb-8">
+                  <h4 className="text-xl font-bold mb-4 text-gray-900">How do I cancel my Pointz Plus subscription?</h4>
                   <p className="text-muted-foreground leading-relaxed">
-                    We make it clear that the subscription is an annual subscription, even if we break it down into the monthly price. When you sign up for the trial, you will be charged for the annual price after the trial period ends.
+                    You can cancel your Pointz Plus subscription at any time through your device's app store settings. For iOS users, go to Settings &gt; Apple ID &gt; Subscriptions. For Android users, go to Google Play Store &gt; Menu &gt; Subscriptions.
                   </p>
                 </div>
 
-                <div>
-                  <h4 className="text-xl font-bold mb-4 text-gray-900">How do I request a refund for my Pointz Plus account?</h4>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    Refunds are only available during the trial period of your Pointz Plus subscription. We cannot grant a refund after the trial period has ended. We make it clear that the subscription is an annual subscription, even if we break it down into the monthly price. When you sign up for the trial, you will be charged for the annual price after the trial period ends.
-                  </p>
+                <div className="border-b border-border pb-8">
+                  <h4 className="text-xl font-bold mb-4 text-gray-900">What cities does Pointz cover?</h4>
                   <p className="text-muted-foreground leading-relaxed">
-                    To request a refund before the end of the 3-day trial period, please contact our customer support team through hi@bikepointz.com. No refunds will be issued after the trial period has ended.
+                    Pointz currently covers all major cities across the United States, providing safe bike routes and navigation for urban bikers nationwide.
+                  </p>
+                </div>
+
+                <div className="pb-8">
+                  <h4 className="text-xl font-bold mb-4 text-gray-900">How does Pointz ensure route safety?</h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Pointz uses advanced algorithms that consider multiple safety factors including traffic speed, road surface quality, speed limits, and user feedback to generate the safest possible routes for bikers and scooter riders.
                   </p>
                 </div>
               </div>

@@ -1,29 +1,52 @@
+# Pointz - Building Better Bike Routes
+# Robots.txt file for bikepointz.com
+
 User-agent: *
 Allow: /
 
-# Block access to admin areas
+# Block access to admin areas and sensitive files
 Disallow: /admin/
 Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /wp-content/uploads/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /logs/
+Disallow: /backup/
+Disallow: /cache/
+Disallow: /temp/
 
 # Allow all major search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Slurp
 Allow: /
+Crawl-delay: 1
 
 User-agent: DuckDuckBot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Baiduspider
 Allow: /
+Crawl-delay: 1
 
 User-agent: YandexBot
 Allow: /
+Crawl-delay: 1
 
+# Social media bots
 User-agent: facebookexternalhit
 Allow: /
 
@@ -34,6 +57,20 @@ User-agent: LinkedInBot
 Allow: /
 
 User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# Image bots
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot-Image
+Allow: /
+
+# Mobile bots
+User-agent: Googlebot-Mobile
 Allow: /
 
 # Sitemap location

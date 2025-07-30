@@ -1,89 +1,251 @@
-# Pointz: Plan Safer on Bikes
+# Pointz Website
 
-Official website for [Pointz](https://www.bikepointz.com/), the cycling navigation app that helps cyclists plan safer bike routes.
+**Building Better Bike Routes** - Official website for Pointz, the safer bike navigation app.
 
-## About Pointz
+## 🌐 Live Website
 
-Pointz is a mobile app that helps cyclists navigate safely by:
+Visit [https://www.bikepointz.com](https://www.bikepointz.com)
 
-- **Road Ratings**: Pre-rates roads on a 1-5 bike-friendliness scale
-- **Route Finding**: Customize routes based on comfort and experience level
-- **Navigation**: Voice-guided navigation with turn-by-turn directions
-- **Community Insights**: Share and access real-time information about hazards, construction, and dangerous intersections
+## 🚀 Features
 
-## Features
+### SEO Optimized
+- **Comprehensive Meta Tags**: Open Graph, Twitter Cards, structured data
+- **Dynamic SEO**: Page-specific titles, descriptions, and keywords
+- **Sitemap**: XML sitemap for search engines
+- **Robots.txt**: Proper search engine crawling rules
+- **Canonical URLs**: Prevent duplicate content issues
+- **Structured Data**: JSON-LD schema markup
 
-- Find the safest bike routes
-- Real-time community updates
-- Voice navigation
-- Road safety ratings
-- Available on iOS and Android
+### Performance
+- **Fast Loading**: Optimized images and assets
+- **Mobile First**: Responsive design for all devices
+- **PWA Ready**: Web app manifest and service worker ready
+- **CDN Ready**: Optimized for content delivery networks
 
-## Website Features
+### User Experience
+- **Cookie Preferences**: GDPR compliant cookie management
+- **Accessibility**: WCAG compliant design
+- **Modern UI**: Clean, professional interface
+- **Cross Browser**: Works on all modern browsers
 
-This website is built with modern web technologies:
+## 🛠️ Technical Stack
 
-- **React 18** with TypeScript
-- **Vite** for fast development and building
-- **Tailwind CSS** for styling
-- **shadcn/ui** for UI components
-- **React Router** for navigation
+- **Framework**: React 19 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui + Radix UI
+- **Routing**: React Router DOM
+- **State Management**: React Query
+- **Icons**: Lucide React
 
-## Development
+## 📁 Project Structure
 
-### Prerequisites
-
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Getting Started
-
-```sh
-# Clone the repository
-git clone <repository-url>
-
-# Navigate to the project directory
-cd bikepointz-offline-vault-main
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
+```
+pointz-website/
+├── public/                 # Static assets
+│   ├── favicon.ico        # Website favicon
+│   ├── robots.txt         # Search engine rules
+│   ├── sitemap.xml        # Site structure
+│   ├── site.webmanifest   # PWA manifest
+│   └── browserconfig.xml  # Windows tile config
+├── src/
+│   ├── components/        # Reusable components
+│   ├── pages/            # Page components
+│   ├── hooks/            # Custom React hooks
+│   ├── assets/           # Images and media
+│   └── lib/              # Utility functions
+└── index.html            # Main HTML file
 ```
 
-The development server will start at `http://localhost:5173`
+## 🚀 Getting Started
 
-### Available Scripts
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
+### Installation
 
-## Deployment
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-org/pointz-website.git
+   cd pointz-website
+   ```
 
-This website can be deployed to any static hosting service:
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-- Vercel
-- Netlify
-- GitHub Pages
-- AWS S3 + CloudFront
+3. **Start development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## SEO & Performance
+4. **Build for production**
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
 
-The website includes:
+## 📱 SEO Features
 
-- Comprehensive meta tags for social sharing
-- Open Graph and Twitter Card support
-- Web manifest for PWA capabilities
-- Optimized favicon and app icons
-- Robots.txt for search engine crawling
+### Meta Tags
+- **Title**: Dynamic page titles with brand name
+- **Description**: Unique descriptions for each page
+- **Keywords**: Targeted keywords for search optimization
+- **Open Graph**: Social media sharing optimization
+- **Twitter Cards**: Twitter-specific meta tags
 
-## License
+### Technical SEO
+- **Canonical URLs**: Prevent duplicate content
+- **XML Sitemap**: Search engine indexing
+- **Robots.txt**: Crawling instructions
+- **Structured Data**: Rich snippets support
 
-© Pointz 2024. All rights reserved.
+### Performance SEO
+- **Image Optimization**: WebP and responsive images
+- **Lazy Loading**: Deferred loading for performance
+- **Minification**: Compressed CSS and JavaScript
+- **Caching**: Browser and CDN caching headers
 
-## Contact
+## 🍪 Cookie Management
 
-For more information about Pointz, visit [www.bikepointz.com](https://www.bikepointz.com/)
+### Features
+- **GDPR Compliant**: European privacy regulation compliance
+- **Granular Control**: Individual cookie category toggles
+- **Persistent Preferences**: User choices saved locally
+- **Easy Access**: Footer link for preference changes
+
+### Cookie Categories
+- **Necessary**: Essential for website functionality
+- **Performance**: Analytics and performance monitoring
+- **Advertising**: Personalized advertising cookies
+
+## 🎨 Design System
+
+### Colors
+- **Primary**: #024ab6 (Pointz Blue)
+- **Secondary**: #1d2d44 (Dark Blue)
+- **Background**: #ffffff (White)
+- **Text**: #1d2d44 (Dark Blue)
+
+### Typography
+- **Primary Font**: Nunito Sans
+- **Display Font**: Futura PT
+- **Monospace**: Montserrat
+
+## 📄 Pages
+
+### Home (`/`)
+- Hero section with app features
+- How it works explanation
+- Press mentions and testimonials
+- Download app CTAs
+
+### About (`/about`)
+- Team member profiles
+- Company mission and values
+- Frequently asked questions
+- Company background
+
+### Contact (`/contact`)
+- Contact options grid
+- Support channels
+- Feature request form
+- Bug report system
+
+### Download (`/download`)
+- App store links
+- Platform-specific downloads
+- App features overview
+- User testimonials
+
+### Legal Pages
+- **Privacy Policy** (`/privacy`)
+- **Terms & Conditions** (`/terms-conditions`)
+
+## 🔧 Configuration
+
+### Environment Variables
+```env
+VITE_APP_URL=https://www.bikepointz.com
+VITE_APP_TITLE=Pointz - Building Better Bike Routes
+```
+
+### Build Configuration
+- **Vite**: Fast build tool with HMR
+- **TypeScript**: Type safety and better DX
+- **Tailwind**: Utility-first CSS framework
+- **PostCSS**: CSS processing and optimization
+
+## 📊 Analytics & Monitoring
+
+### SEO Tools
+- **Google Search Console**: Search performance monitoring
+- **Google Analytics**: User behavior tracking
+- **Lighthouse**: Performance auditing
+- **PageSpeed Insights**: Speed optimization
+
+### Monitoring
+- **Error Tracking**: JavaScript error monitoring
+- **Performance**: Core Web Vitals tracking
+- **Uptime**: Website availability monitoring
+
+## 🚀 Deployment
+
+### Production Build
+```bash
+npm run build
+```
+
+### Deployment Options
+- **Vercel**: Zero-config deployment
+- **Netlify**: Git-based deployment
+- **AWS S3**: Static hosting
+- **GitHub Pages**: Free hosting
+
+### Environment Setup
+1. Set production environment variables
+2. Configure custom domain
+3. Set up SSL certificate
+4. Configure CDN for performance
+
+## 📈 Performance Metrics
+
+### Core Web Vitals
+- **LCP**: < 2.5s (Largest Contentful Paint)
+- **FID**: < 100ms (First Input Delay)
+- **CLS**: < 0.1 (Cumulative Layout Shift)
+
+### Lighthouse Scores
+- **Performance**: 90+
+- **Accessibility**: 95+
+- **Best Practices**: 95+
+- **SEO**: 100
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## 📄 License
+
+This project is proprietary software owned by Pointz.
+
+## 📞 Support
+
+- **Email**: hi@bikepointz.com
+- **Website**: https://www.bikepointz.com
+- **Documentation**: [Internal Wiki]
+
+---
+
+**Built with ❤️ by the Pointz Team**

@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import appStoreBadge from "@/assets/app-store-badge.png";
 import googlePlayBadge from "@/assets/google-play-badge.png";
 import heroPhone from "@/assets/hero-phone.png";

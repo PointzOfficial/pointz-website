@@ -2,7 +2,7 @@
 import { usePageTitle } from "@/hooks/use-page-title";
 
 const Download = () => {
-  usePageTitle("Pointz: Plan Safer on Bikes - Download App");
+  usePageTitle("Download Pointz App - Safe Bike Navigation | iOS & Android");
 
   return (
     <div className="min-h-screen relative">

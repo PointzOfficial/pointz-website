@@ -1,21 +1,20 @@
 {
-  "name": "Pointz: Plan Safer on Bikes",
+  "name": "Pointz - Building Better Bike Routes",
   "short_name": "Pointz",
-  "description": "Plan safer bike routes with Pointz. Find bike-friendly routes, navigate with confidence, and share insights with the cycling community.",
+  "description": "Plan safer bike routes with Pointz. Find bike-friendly routes rated 1-5, navigate with confidence, and share insights with the biking community.",
   "start_url": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#024ab6",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["navigation", "lifestyle", "sports"],
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
     }
   ]
 } 

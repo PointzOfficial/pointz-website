@@ -8,7 +8,8 @@ import reportBugImage from "@/assets/report-bug.png";
 import faqImage from "@/assets/faq.png";
 
 const ContactUs = () => {
-  usePageTitle("Pointz: Plan Safer on Bikes - Contact Us");
+  usePageTitle("Contact Pointz - Get Support & Feedback | Building Better Bike Routes");
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
