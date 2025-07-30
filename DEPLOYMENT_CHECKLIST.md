@@ -51,8 +51,9 @@ Value: your-username.github.io
 ## Files Added/Modified
 - ✅ `vite.config.ts` - Updated base path
 - ✅ `public/CNAME` - Custom domain configuration
-- ✅ `public/404.html` - SPA routing for GitHub Pages
-- ✅ `index.html` - Added SPA routing script
+- ✅ `public/404.html` - SPA routing for GitHub Pages (handles direct URL access)
+- ✅ `index.html` - Clean URLs without hash fragments
+- ✅ `src/App.tsx` - Switched from HashRouter to BrowserRouter
 - ✅ `.github/workflows/deploy.yml` - GitHub Actions workflow
 - ✅ `package.json` - Added deploy script
 
