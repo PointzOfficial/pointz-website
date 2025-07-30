@@ -1,5 +1,6 @@
 
 import { usePageTitle } from "@/hooks/use-page-title";
+import pointzWebsitePhotos from "@/assets/pointz-website-photos.png";
 
 const Download = () => {
   usePageTitle("Download Pointz App - Safe Bike Navigation | iOS & Android");
@@ -9,7 +10,7 @@ const Download = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/pointz-website/pointz-website-photos.png" 
+          src={pointzWebsitePhotos}
           alt="Pointz website photos"
           className="w-full h-full object-cover"
         />
