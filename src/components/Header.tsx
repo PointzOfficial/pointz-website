@@ -67,8 +67,8 @@ export const Header = () => {
             >
               CONTACT US
             </Link>
-            <a 
-              href="/download" 
+            <Link 
+              to="/download" 
               className="text-primary hover:text-primary-dark transition-colors font-medium"
               style={{
                 fontFamily: 'Nunito Sans, sans-serif',
@@ -78,7 +78,7 @@ export const Header = () => {
               }}
             >
               DOWNLOAD
-            </a>
+            </Link>
           </nav>
           
           {/* Mobile Menu Button */}
@@ -136,8 +136,8 @@ export const Header = () => {
               >
                 CONTACT US
               </Link>
-              <a 
-                href="/download" 
+              <Link 
+                to="/download" 
                 className="block text-primary hover:text-primary-dark transition-colors font-medium py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
                 style={{
@@ -148,7 +148,7 @@ export const Header = () => {
                 }}
               >
                 DOWNLOAD
-              </a>
+              </Link>
             </nav>
           </div>
         )}

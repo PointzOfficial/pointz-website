@@ -9,7 +9,7 @@ const Download = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/pointz-website-photos.png" 
+          src="/pointz-website/pointz-website-photos.png" 
           alt="Pointz website photos"
           className="w-full h-full object-cover"
         />
