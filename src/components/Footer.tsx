@@ -54,7 +54,7 @@ export const Footer = () => {
 
             {/* Copyright */}
             <div className="text-center">
-              <p className="text-white/90 text-lg font-medium">© Pointz. 2024</p>
+              <p className="text-white/90 text-lg font-medium">© Pointz. {new Date().getFullYear()}</p>
             </div>
           </div>
 
