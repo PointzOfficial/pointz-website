@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { CookiePreferences } from "./CookiePreferences";
 
 export const Footer = () => {
@@ -63,8 +64,8 @@ export const Footer = () => {
             {/* Terms and Privacy */}
             <div className="text-center mb-6">
               <div className="space-y-2">
-                <a href="/terms-conditions" className="text-white/80 hover:text-white transition-colors duration-300 block">Terms and Conditions</a>
-                <a href="/privacy" className="text-white/80 hover:text-white transition-colors duration-300 block">Privacy Policy</a>
+                <Link to="/terms-conditions" className="text-white/80 hover:text-white transition-colors duration-300 block">Terms and Conditions</Link>
+                <Link to="/privacy" className="text-white/80 hover:text-white transition-colors duration-300 block">Privacy Policy</Link>
                 <button 
                   onClick={() => setShowCookiePreferences(true)}
                   className="text-white/80 hover:text-white transition-colors duration-300 block w-full"
