@@ -1,18 +1,19 @@
-import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import About from "./pages/About";
-import ContactUs from "./pages/ContactUs";
-import Download from "./pages/Download";
-import NotFound from "./pages/NotFound";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CookieBanner } from "./components/CookieBanner";
 import { ScrollToTop } from "./components/ScrollToTop";
-import TermsConditions from "./pages/TermsConditions";
-import Privacy from "./pages/Privacy";
+import About from "./pages/About";
+import ContactUs from "./pages/ContactUs";
+import DeleteAccount from "./pages/DeleteAccount";
+import Download from "./pages/Download";
 import FAQs from "./pages/FAQs";
+import Index from "./pages/Index";
+import NotFound from "./pages/NotFound";
+import Privacy from "./pages/Privacy";
+import TermsConditions from "./pages/TermsConditions";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/delete-account" element={<DeleteAccount />} />
           <Route path="/download" element={<Download />} />
           <Route path="/qr-code" element={<Download />} />
           <Route path="/faqs-pointz-plus" element={<FAQs />} />
