@@ -17,48 +17,27 @@ const DeleteAccount = () => {
     setIsSubmitting(true);
 
     try {
-      // First, we need to activate FormSubmit for your email
-      // This will send an activation email to hi@bikepointz.com
-      const activationData = new FormData();
-      activationData.append("_activation", "true");
-
-      const activationResponse = await fetch(
-        "https://formsubmit.co/hi@bikepointz.com",
-        {
-          method: "POST",
-          body: activationData,
-        }
+      const formData = new FormData();
+      formData.append("email", email);
+      formData.append("reason", reason || "No reason provided");
+      formData.append("subject", "Account Deletion Request - Pointz App");
+      formData.append("_captcha", "false");
+      formData.append(
+        "message",
+        `Account deletion request received from: ${email}\n\nReason: ${
+          reason || "No reason provided"
+        }\n\nTimestamp: ${new Date().toISOString()}`
       );
 
-      if (activationResponse.ok) {
-        // Now send the actual deletion request
-        const formData = new FormData();
-        formData.append("email", email);
-        formData.append("reason", reason || "No reason provided");
-        formData.append("subject", "Account Deletion Request - Pointz App");
-        formData.append("_captcha", "false");
-        formData.append(
-          "message",
-          `Account deletion request received from: ${email}\n\nReason: ${
-            reason || "No reason provided"
-          }\n\nTimestamp: ${new Date().toISOString()}`
-        );
+      const response = await fetch("https://formsubmit.co/hi@bikepointz.com", {
+        method: "POST",
+        body: formData,
+      });
 
-        const response = await fetch(
-          "https://formsubmit.co/hi@bikepointz.com",
-          {
-            method: "POST",
-            body: formData,
-          }
-        );
-
-        if (response.ok) {
-          setIsSubmitted(true);
-        } else {
-          throw new Error("Failed to submit request");
-        }
+      if (response.ok) {
+        setIsSubmitted(true);
       } else {
-        throw new Error("Failed to activate FormSubmit");
+        throw new Error("Failed to submit request");
       }
     } catch (error) {
       console.error("Error submitting deletion request:", error);
