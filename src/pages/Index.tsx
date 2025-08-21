@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { FeaturesSection } from "@/components/FeaturesSection";
 import { PressSection } from "@/components/PressSection";
 import { Footer } from "@/components/Footer";
+import { ParameterRedirect } from "@/components/ParameterRedirect";
 import { usePageTitle } from "@/hooks/use-page-title";
 
 const Index = () => {
@@ -10,6 +11,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <ParameterRedirect />
       <Header />
       <HeroSection />
       <FeaturesSection />
