@@ -18,7 +18,8 @@ const DeleteAccount = () => {
 
     try {
       const formData = new FormData();
-      formData.append("email", email);
+      formData.append("email", "hi@bikepointz.com");
+      formData.append("email1", email);
       formData.append("reason", reason || "No reason provided");
       formData.append("subject", "Account Deletion Request - Pointz App");
       formData.append("_captcha", "false");
