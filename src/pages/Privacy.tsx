@@ -302,8 +302,8 @@ const Privacy = () => {
                 <h4 className="text-lg font-bold mb-4">B) Analytics Cookies</h4>
                 <ul className="list-disc list-inside text-muted-foreground leading-relaxed mb-4 ml-4">
                   <li>
-                    Administered by: Us, Squarespace, Google Analytics, and
-                    other third party partners
+                    Administered by: Us, Google Analytics, and other third party
+                    partners
                   </li>
                   <li>
                     Purpose: Google Analytics installs cookies to store
@@ -316,7 +316,7 @@ const Privacy = () => {
                     site usage for the site's analytics report.
                   </li>
                 </ul>
-                <h4 className="text-lg font-bold mb-4">
+                {/* <h4 className="text-lg font-bold mb-4">
                   C) Advertisement Cookies
                 </h4>
                 <ul className="list-disc list-inside text-muted-foreground leading-relaxed mb-4 ml-4">
@@ -329,7 +329,7 @@ const Privacy = () => {
                     to You when either on Facebook or on a digital platform
                     powered by Facebook advertising, after visiting the website.
                   </li>
-                </ul>
+                </ul> */}
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   <strong>
                     Analytics and Advertising Services Provided by Others
