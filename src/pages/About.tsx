@@ -53,13 +53,12 @@ const About = () => {
                 </p>
                 <div className="text-center">
                   <p className="text-muted-foreground leading-relaxed">
-                    Trisha is a fearless tech leader dedicated to impactful
-                    advancements in mobile app development and AI. With
-                    experience as a startup CTO and in engineering roles at
-                    Adobe and Nasdaq, Trisha applies her expertise to drive
-                    positive change. With a B.S. in Computer Science from Brown,
-                    Trisha founded Pointz to make urban biking safer and more
-                    accessible.
+                    Trisha is dedicated to impactful advancements in mobile app
+                    development and AI. With experience as a startup CTO and in
+                    engineering roles at Adobe and Nasdaq, Trisha applies her
+                    expertise to drive positive change. With a B.S. in Computer
+                    Science from Brown, Trisha founded Pointz to make urban
+                    biking safer and more accessible.
                   </p>
                 </div>
               </div>
