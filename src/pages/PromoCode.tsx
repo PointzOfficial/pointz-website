@@ -122,7 +122,7 @@ const PromoCode = () => {
       }
 
       const response = await fetch(
-        "http://localhost:8080/web/redeem_code?code=" + code,
+        "https://prod-pointz.ddns.net:8443/web/redeem_code?code=" + code,
         {
           method: "GET",
           headers: {
